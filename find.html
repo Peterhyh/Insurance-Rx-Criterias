@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" />
+        <link rel="stylesheet" href="static/style.css" />
+        <title>Insurance Denials</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarBar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarBar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="find.html">Find</a></li>
+                        <li class="nav-item"><a class="nav-link" href="create.html">Create</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row row-content">
+                <div class="mx-auto col col-sm-6 mt-5">
+                    <div class="card">
+                        <h2 class="card-header bg-dark" align="center">Find</h2>
+                        <div class="card-body align-self-center">
+                            <form>
+                                <div class="form-group row">
+                                    <label class="col-12 col-form-label" for="drugName">Drug Name:</label>
+                                    <div class="col-md">
+                                        <input align="center" class="form-control" type="text" id="drugName" name="drugName" placeholder="Drug" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-12 col-form-label" for="insuranceName">Insurance Name:</label>
+                                    <div class="col-md">
+                                        <input align="center" class="form-control" type="text" id="insuranceName" name="insurnaceName" placeholder="Insurance name" />
+                                    </div>
+                                </div>
+                                <div class="col-12 form-group row">
+                                    <button class="btn btn-primary" type="submit">Search</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

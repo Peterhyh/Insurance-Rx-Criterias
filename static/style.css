@@ -1,0 +1,11 @@
+body{
+    background: #DDDDDD;
+}
+
+h1, h2, li, label{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2.card-header{
+    color: white;
+}
