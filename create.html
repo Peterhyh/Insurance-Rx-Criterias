@@ -4,21 +4,26 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" />
         <link rel="stylesheet" href="static/style.css" />
         <title>Insurance Denials</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+            <a class="nav-bar brand text-decoration-none" href="index.html">
+                <h4 class="nav-item text-white">Insurance Denial Records</h4>
+            </a>
             <div class="container">
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarBar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarBar">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="find.html">Find</a></li>
                         <li class="nav-item active"><a class="nav-link" href="create.html">Create</a></li>
+                        <li class="nav-item"><a class="nav-link ml-3" href="login.html">Logout</a></li>
                     </ul>
                 </div>
             </div>
@@ -28,16 +33,15 @@
         
         <div class="container">
             <div class="row row-content">
-                <div class="mx-auto col col-sm-6 mt-3">
-                    <div class="card">
-                        <h2 class="card-header bg-dark" align="center">Create</h2>
-                        <div class="card-body align-self-center">
+                <div class="mx-auto col col-sm-11 my-auto p-5">
+                    <div class="card rounded">
+                        <h2 class="card-header bg-dark rounded">Create</h2>
+                        <div class="card-body">
                             <form>
                                 <div class="form-group row">
-                                    <label class="col-12 col-form-label" for="year">Year Discovered:</label>
-                                    <div class="col-4">
+                                    <div class="col-4 col-md-3 col-lg-2 col-xl-2">
                                         <select class="form-control" id="year" name="year" placeholder="Year">
-                                            <option>Select...</option>
+                                            <option>Year...</option>
                                             <option>2021</option>
                                             <option>2022</option>
                                             <option>2023</option>
@@ -46,25 +50,30 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-12 col-form-label" for="drugName">Drug Name:</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="text" id="drugName" name="drugName" placeholder="Drug" />
+                                    <div class="col col-sm-7">
+                                        <input class="form-control" type="text" id="drugName" name="drugName" placeholder="Drug name" />
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-12 col-form-label" for="insuranceName">Insurance Name:</label>
-                                    <div class="col-md-10">
-                                        <input class="form-control" type="text" id="insuranceName" name="insurnaceName" placeholder="Insurance name" />
+                                    <div class="col col-sm-9">
+                                        <select class="form-control" id="insurnace" name="insurance">
+                                            <option>Select insurance...</option>
+                                            <option>Blue Cross Blue Shield</option>
+                                            <option>CVS Caremark</option>
+                                            <option>Express Scripts</option>
+                                            <option>Humana</option>
+                                            <option>Medi-Cal</option>
+                                            <option>OptumRx</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-12 col-form-label" for="denial">Reason for Denial:</label>
-                                    <div class="col-md-10">
+                                    <div class="col-sm-12">
                                         <textarea class="form-control" id="denial" name="denial" rows="8" placeholder="Denial reasoning"></textarea>
                                     </div>
                                 </div>
-                                <div class="col-12 form-group row">
-                                    <button class="btn btn-primary" type="submit">Search</button>
+                                <div class="col col-sm-12 form-group row">
+                                    <button class="btn btn-primary" type="submit">Submit</button>
                                 </div>
                             </form>
                         </div>
@@ -72,6 +81,19 @@
                 </div>
             </div>
         </div>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <h7 class="col text-center">Contact</h7>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <a role="button" class="btn btn-link text-decoration-none" href="mailto:peterhyh@yahoo.com"><i class="fa fa-envelope-o"></i>Email</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>

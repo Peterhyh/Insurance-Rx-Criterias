@@ -4,21 +4,26 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" />
         <link rel="stylesheet" href="static/style.css" />
         <title>Insurance Denials</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+            <a class="nav-bar brand col-4 text-decoration-none" href="index.html">
+                <h4 class="nav-item text-white">Insurance Denial Records</h4>
+            </a>
             <div class="container">
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarBar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarBar">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item active"><a class="nav-link" href="find.html">Find</a></li>
                         <li class="nav-item"><a class="nav-link" href="create.html">Create</a></li>
+                        <li class="nav-item"><a class="nav-link ml-3" href="login.html">Logout</a></li>
                     </ul>
                 </div>
             </div>
@@ -26,21 +31,27 @@
 
         <div class="container">
             <div class="row row-content">
-                <div class="mx-auto col col-sm-6 mt-5">
-                    <div class="card">
-                        <h2 class="card-header bg-dark" align="center">Find</h2>
-                        <div class="card-body align-self-center">
+                <div class="mx-auto col col-sm-12 col-md-10 col-lg-8 col-xl-7 p-5">
+                    <div class="card rounded">
+                        <h2 class="card-header bg-dark rounded">Find</h2>
+                        <div class="card-body">
                             <form>
                                 <div class="form-group row">
-                                    <label class="col-12 col-form-label" for="drugName">Drug Name:</label>
-                                    <div class="col-md">
+                                    <div class="col col-sm-10 col-md-9">
                                         <input align="center" class="form-control" type="text" id="drugName" name="drugName" placeholder="Drug" />
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-12 col-form-label" for="insuranceName">Insurance Name:</label>
-                                    <div class="col-md">
-                                        <input align="center" class="form-control" type="text" id="insuranceName" name="insurnaceName" placeholder="Insurance name" />
+                                    <div class="col col-sm-10 col-md-9">
+                                        <select class="form-control" id="insurnace" name="insurance">
+                                            <option>Select insurance...</option>
+                                            <option>Blue Cross Blue Shield</option>
+                                            <option>CVS Caremark</option>
+                                            <option>Express Scripts</option>
+                                            <option>Humana</option>
+                                            <option>Medi-Cal</option>
+                                            <option>OptumRx</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-12 form-group row">
@@ -52,6 +63,74 @@
                 </div>
             </div>    
         </div>
+
+        <table class="table table-striped col-sm-11 mx-auto my-5">
+            <thead>
+                <tr>
+                    <th scope="col">Drug</th>
+                    <th scope="col">Insurance</th>
+                    <th scope="col">Reason for Denial</th>
+                    <th scope="col">Year of Denial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">{drug name}</td>
+                    <td>{insurance name}</td>
+                    <td>{year}</td>
+                    <td>{denial reasoning}</td>
+                </tr>
+                <tr>
+                    <td scope="row">{drug name}</td>
+                    <td>{insurance name}</td>
+                    <td>{year}</td>
+                    <td>{denial reasoning}</td>
+                </tr>
+                <tr>
+                    <td scope="row">{drug name}</td>
+                    <td>{insurance name}</td>
+                    <td>{year}</td>
+                    <td>{denial reasoning}</td>
+                </tr>
+                <tr>
+                    <td scope="row">{drug name}</td>
+                    <td>{insurance name}</td>
+                    <td>{year}</td>
+                    <td>{denial reasoning}</td>
+                </tr>
+                <tr>
+                    <td scope="row">{drug name}</td>
+                    <td>{insurance name}</td>
+                    <td>{year}</td>
+                    <td>{denial reasoning}</td>
+                </tr>
+                <tr>
+                    <td scope="row">{drug name}</td>
+                    <td>{insurance name}</td>
+                    <td>{year}</td>
+                    <td>{denial reasoning}</td>
+                </tr>
+                <tr>
+                    <td scope="row">{drug name}</td>
+                    <td>{insurance name}</td>
+                    <td>{year}</td>
+                    <td>{denial reasoning}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <h7 class="col text-center">Contact</h7>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <a role="button" class="btn btn-link text-decoration-none" href="mailto:peterhyh@yahoo.com"><i class="fa fa-envelope-o"></i>Email</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>

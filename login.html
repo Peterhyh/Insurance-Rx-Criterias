@@ -10,8 +10,8 @@
         <title>Insurance Denials</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
-            <a class="nav-bar brand col-4 text-decoration-none" href="#">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="nav-bar brand col-4 text-decoration-none" href="login.html">
                 <h4 class="nav-item text-white">Insurance Denial Records</h4>
             </a>
             <div class="container">
@@ -20,26 +20,28 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarBar">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="find.html">Find</a></li>
-                        <li class="nav-item"><a class="nav-link" href="create.html">Create</a></li>
-                        <li class="nav-item"><a class="nav-link ml-3" href="login.html">Logout</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="login.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="signup.html">Sign up</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-
         <div class="container">
-            <div class="row mt-5">
-                <div class="mx-auto">
-                    <a class="col-6 text-decoration-none" href="find.html">
-                        <h1 class="text-white">Find</h1>
-                    </a>
-                </div>
-                <div class="mx-auto">
-                    <a class="col-6 text-decoration-none" href="create.html">
-                        <h1 class="text-white">Create</h1>
-                    </a>
+            <div class="row row-content">
+                <div class="col col-sm-5 mx-auto">
+                    <div class="card mt-3">
+                        <h2 class="card-header bg-dark text-white rounded">Login</h2>
+                        <div class="card-body bg-white rounded">
+                            <form class="form-group">
+                                <div class="col col-sm-7 mb-1 mx-auto">
+                                    <input class="form-control" placeholder="Email" />
+                                </div>
+                                <div class="col col-sm-7 mx-auto">
+                                    <input class="form-control" placeholder="Password" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

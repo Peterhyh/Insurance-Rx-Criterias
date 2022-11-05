@@ -1,11 +1,44 @@
 body{
-    background: #DDDDDD;
+    background-image: linear-gradient(to right, #1C1820, #260E3A, #33055A)
 }
 
-h1, h2, li, label{
+h1, h2, h4, li, label{
     font-family: 'Montserrat', sans-serif;
 }
 
 h2.card-header{
     color: white;
+}
+
+.site-footer{
+    color:white;
+    background-image: linear-gradient(#333041, #0E1018);
+    padding: 20px 0;
+}
+
+.navbar{
+    background-image: linear-gradient(#333041, #0E1018);
+}
+
+.card-header{
+    background-image: linear-gradient(#333041, #0E1018);
+}
+
+table thead {
+    background-image: linear-gradient(#333041, #0E1018);
+    color: white;
+}
+
+table tbody{
+    background-color: white;
+}
+
+nav label.text-white{
+    cursor: pointer;
+}
+
+div a h1.text-white{
+    background-color: rgba(47, 47, 47, 0.5);
+    padding: 20px;
+    border-radius: 25px;
 }
